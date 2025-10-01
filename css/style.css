@@ -278,6 +278,39 @@ section {
   background: var(--white);
 }
 
+.team-list-item-text {
+  padding-bottom: 8px;
+}
+
+.team-social-icons-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons {
+  width: 16px;
+  height: 16px;
+}
+
+.team-social-icons-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--iris);
+  border-radius: 50%;
+}
+
+.team-social-icons-item:hover,
+.team-social-icons-item:focus {
+  background-color: var(--ocean);
+}
+
 /* !Section Portfolio(section 4) */
 .portfolio {
   padding: 120px 0;
@@ -294,10 +327,49 @@ section {
   row-gap: 48px; */
 }
 .portfolio-list-item {
+  position: relative;
+
   width: calc((100% - 48px) / 3);
+}
+
+.portfolio-list-item:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .portfolio-list-item-img {
   display: block;
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris);
+  color: var(--cloud);
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.overlay-text {
+  display: block;
+
+  padding: 40px 32px;
+}
+.portfolio-list-item:hover .portfolio-overlay {
+  opacity: 1;
 }
 
 .portfolio-text-wrapper {
@@ -309,8 +381,12 @@ section {
   border-left: 1px solid var(--cornflower);
   border-right: 1px solid var(--cornflower);
   padding: 32px 16px;
-  width: 360px;
+  width: 100%;
   height: 120px;
+}
+
+.portfolio-text-wrapper:hover,
+.portfolio-text-wrapper:focus {
 }
 
 .portfolio-list-item-text {
@@ -326,8 +402,8 @@ section {
 
 .footer .container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
 }
 
 .footer-logo {
@@ -339,6 +415,11 @@ section {
   color: var(--cloud);
 }
 
-footer a.footer-logo {
-  display: inline-block;
+.footer-text-wrapper {
+  margin-right: 120px;
+}
+
+.footer-social-media-title {
+  color: var(--white);
+  margin-bottom: 16px;
 }
