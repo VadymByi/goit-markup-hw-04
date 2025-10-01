@@ -174,8 +174,14 @@ section {
   display: flex;
   justify-content: center;
   align-content: center;
-  background: var(--navy-blue);
   padding: 188px 0;
+
+  background: linear-gradient(var(--grey), var(--grey)),
+    url("../images/people-office.jpg"), var(--navy-blue);
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, center, center;
+  background-size: cover, cover, cover;
 }
 
 .about .container {
@@ -363,9 +369,9 @@ section {
   text-align: center;
 }
 
-.overlay-text {
+.text-overlay {
   display: block;
-
+  text-align: left;
   padding: 40px 32px;
 }
 .portfolio-list-item:hover .portfolio-overlay {
