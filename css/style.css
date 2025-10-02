@@ -226,16 +226,14 @@ section {
   max-width: 1440px;
   margin: auto;
 
-  background: linear-gradient(var(--grey), var(--grey)),
-    url("../images/people-office.jpg"), var(--navy-blue);
+  background: linear-gradient(var(--grey), var(--grey)) center/cover no-repeat,
+    url("../images/people-office.jpg") center/cover no-repeat;
 
   /* background: linear-gradient(var(--grey), var(--grey)),
     url("../images/people-office.jpg"), var(--navy-blue);
-
-   */
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .about .container {
