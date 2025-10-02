@@ -225,15 +225,17 @@ section {
   padding: 188px 0;
   max-width: 1440px;
   margin: auto;
+
   background: linear-gradient(var(--grey), var(--grey)),
-    url("../images/people-office.jpg") center/cover no-repeat, var(--navy-blue);
+    url("../images/people-office.jpg"), var(--navy-blue);
 
   /* background: linear-gradient(var(--grey), var(--grey)),
     url("../images/people-office.jpg"), var(--navy-blue);
 
+   */
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; */
+  background-size: cover;
 }
 
 .about .container {
@@ -567,6 +569,6 @@ section {
 }
 
 .footer .team-social-icons-link:hover,
-.footer.team-social-icons-link:focus {
+.footer .team-social-icons-link:focus {
   background-color: var(--green);
 }
